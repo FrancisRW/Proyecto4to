@@ -119,8 +119,8 @@ ul ul {
 }
 
 a {
-  color: #0d6efd;
-  text-decoration: underline;
+  color: #0099ff;
+  text-decoration: none;
 }
 
 a:hover {
@@ -677,7 +677,7 @@ button {
 
 .carousel-inner {
   position: relative;
-  width: 100%;
+  width: auto;
   overflow: hidden;
 }
 
@@ -833,6 +833,7 @@ button {
 
 .float-end {
   float: right !important;
+  text-decoration: none;
 }
 
 .d-flex {
@@ -944,13 +945,23 @@ img {
   background-color: orange;
 }
 
-@media (max-width: 650px) {
-  .icono {
-    width: 60px;
-    height: 60px;
-    display: inline;
-    margin: 0px 0px 0px 0px;
-  }
+#fran {
+  font-family: sans-serif;
+  font-size: 20px;
+}
+
+#yo {
+  width: auto;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.icono {
+  width: 60px;
+  height: 60px;
+  display: inline;
+  margin: 0px 20px 0px 20px;
+  border-radius: 50%;
 }
 
 @media (max-width: 800px) {
@@ -961,6 +972,17 @@ img {
   .ilustracion {
     padding: 5%, 0, 5%, 0;
     width: 100%;
+  }
+  .icono {
+    width: 40px;
+    height: 40px;
+    display: inline;
+    margin: 0px 0px 0px 0px;
+  }
+  #yo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
   }
 }
 
@@ -1003,20 +1025,9 @@ footer {
   background-color: rgba(170, 169, 169, 0);
 }
 
-.icono {
-  width: 60px;
-  height: 60px;
-  display: inline;
-  margin: 0px 20px 0px 20px;
-}
-
 footer {
   padding-top: 1rem;
   padding-bottom: 2rem;
-}
-
-#yo {
-  border-radius: 50%;
 }
 
 .bd-placeholder-img {
@@ -1125,15 +1136,6 @@ ul ul {
 
 .small, small {
   font-size: .875em;
-}
-
-a {
-  color: #0d6efd;
-  text-decoration: underline;
-}
-
-a:hover {
-  color: #0a58ca;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -1766,12 +1768,8 @@ button {
 
 .carousel-inner {
   position: relative;
-}
-
-.carousel-inner::after {
-  display: block;
-  clear: both;
-  content: "";
+  max-width: 400px !important;
+  max-height: 220px !important;
 }
 
 .carousel-item {
@@ -1941,10 +1939,6 @@ button {
   border: 0 !important;
 }
 
-.float-end {
-  float: right !important;
-}
-
 .d-flex {
   display: flex !important;
 }
@@ -2014,12 +2008,6 @@ button {
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
-body {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  color: #5a5a5a;
-}
-
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 /* Carousel base class */
@@ -2065,5 +2053,34 @@ body {
   background: crimson;
   font-size: 30px;
   width: 80px;
+}
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border: 1px;
+  color: #747474;
+  /* If you want dots under the hoverable text */
+  border-color: #212529;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #212529;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
 /*# sourceMappingURL=reducido.css.map */
