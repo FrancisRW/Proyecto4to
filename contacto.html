@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 
-  
+
 <head>
 
   <meta charset="utf-8">
@@ -9,17 +9,31 @@
   <meta name="description" content="Pagina de contacto de Hamburgo">
   <meta name="author" content="Francis Pastrana">
   <meta name="keywords" content="contacto, formulario ,opinion ,feedback,cuidado al cliente">
-  
+
   <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap" rel="stylesheet">
-  <link href="https://francisrw.github.io/Proyecto4to/css/reducido.css" rel="stylesheet">
 
-  <title>Hamburgo</title>
+  <!--.<link href="https://francisrw.github.io/Proyecto4to/css/reducido.css" rel="stylesheet">
+ -->
+  <link href="./css/reducido.css" rel="stylesheet">
+
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+
+
+  <title>Conacto Hamburgo</title>
+
 </head>
 
-  <body>
+<body>
 
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <div class="container-fluid">
@@ -43,7 +57,7 @@
             <a class="nav-link active" href="contacto.html">Contacto</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="otros.html">Más Información</a>
+            <a class="nav-link" href="otros.html">Club Hamburgo</a>
           </li>
         </ul>
 
@@ -52,75 +66,173 @@
   </nav>
 
   <header>
-    <div class=video>
-      <video controls autoplay width="640" height="480" src="assets/video2.mp4">
-    </div>
+
 
   </header>
+  <div class="container, contenido, todo">
 
-  <div class=titulo>Formulario de contacto</div>
-  <form class="formulario grilla zen fondonegro parrafo">
+    <div class=titulo>Formulario de contacto
 
-    <div>
-      <label>Nombre</label>
-      <input type="email" class="form-control" ">
-  </div>
-
-  <div>
-    <label >Apellido</label> 
-    <input class=" form-control">
     </div>
+    <div class=texto>
 
-    <div>
-      <label>Correo electronico</label>
-      <input type="email" class="form-control" ">
-  </div>
+      <div class=bloque>
 
-  <div>
-    <label >Telefono</label> 
-    <input type=" email" class="form-control" ">
-  </div>
+        <p class="seccion__parrafo  parrafo zen">
+          Somos un equipo enfocdo en el detalle y consciente del valor del esfuerzo de cada uno de nuestros miembros.
+          Nuestras materias primas, nuestro equipo y nuestra clientela componen una delicada harmonia de caracter,
+          trabajo, calidad y servicio. Tal sistema estaria incompleto y se volveria obsoleto sin una adecuada
+          comunicacion
+          con usted, el elemento central de esta compleja experiencia.
+          Le invitamos a compartir su experiencia, comentario o anecdota haciendo uso del siguiente formulario.
+          Leemos con atencion a todos y cada uno de nuestros clientes.
 
-  
-  <div class=" mb-3 ">
-    
-  </div>
-  <div class=" mb-3 form-check">
-      <input type="checkbox">
-      <label>Es celiac@</label>
-    </div>
-    <button class=btn id=btn--1 type=Submit>Enviar</button>
-  </form>
+        </p>
 
-
-  <main>
-
-
-
-  </main>
-
-  <footer >
-      
-    <div class="container">
-    <p class="float-end mb-1">
-     <a href="#">Volver al tope</a>
-     </p>
-     
-
-      <div class=iconos>   
-        <div>  
-     
-      <a href="https://www.instagram.com/frannoesfran/">  <img class = icono src="assets/insta.png" > </a>
-      <a href="https://github.com/FrancisRW">  <img class = icono src="assets/GH.png" > </a>
-      <a href="https://www.instagram.com/frannoesfran/">   <img class = icono src="assets/ln.png"> </a>
-      <a>Francis Pastrana 2021 :) <img class=icono id = yo src="assets/yo.jpg" >  </a>
       </div>
-      
+
+      <div class=bloque>
+
+        <img class=ilustracion src="./assets/clientes.jpeg" width=100% heigh=auto> </img>
+
+      </div>
+
     </div>
+    <div class=texto>
+
+      <div class=bloque>
+
+
+
+
+        <form class="formulario grilla zen fondonegro parrafo">
+
+          <div>
+            <label>Nombre</label>
+            <input type="email" class="form-control" ">
+         </div>
+
+        <div>
+
+           <label >Apellido
+
+           </label> 
+           <input class=" form-control">
+          </div>
+
+          <div>
+            <label>Correo electronico</label>
+            <input type="email" class="form-control">
+          </div>
+
+          <div>
+            <label>Telefono</label>
+            <input type=" email" class="form-control">
+          </div>
+
+
+          <div class=" mb-3 ">
+
+          </div>
+
+          <div class=" mb-3 form-check">
+            <input type="checkbox">
+            <label>Es celiac@</label>
+          </div>
+
+
+          <div>
+            <label>Comentarios</label>
+            <input type=" email" class="form-control">
+          </div>
+
+          <button class=btn id=btn--1 type=Submit>Enviar</button>
+
+        </form>
+
+      </div>
+
+      <div class=bloque>
+
+        <img class=ilustracion src="./assets/bar.jpg" with=50% heigh=auto> </img>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+        aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <img class="bd-placeholder-img" width="380px" height="auto" src="./assets/review4.PNG" aria-hidden="true"
+          preserveAspectRatio="xMidYMid slice" focusable="false">
+        <rect width="100%" height="100%" fill="#777" /></img>
+
+
+      </div>
+
+      <div class="carousel-item">
+        <img class="bd-placeholder-img" width="380px" height="auto" src="./assets/review.PNG" aria-hidden="true"
+          preserveAspectRatio="xMidYMid slice" focusable="false">
+        <rect width="100%" height="100%" fill="#777" /></img>
+
+      </div>
+
+      <div class="carousel-item">
+        <img class="bd-placeholder-img" width="380px" height="auto" src="./assets/review2.PNG" aria-hidden="true"
+          preserveAspectRatio="xMidYMid slice" focusable="false">
+        <rect width="100%" height="100%" fill="#777" /></img>
+
+      </div>
+
+
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+  </div>
+
+
+  <footer>
+
+    <div class="container">
+      <p class="float-end mb-1">
+        <a href="#">Volver al tope</a>
+      </p>
+
+
+
+      <div class=iconos>
+        <div>
+
+          <a href="https://www.instagram.com/frannoesfran/"> <img class=icono src="assets/insta.png"> </a>
+          <a href="https://github.com/FrancisRW"> <img class=icono src="assets/GH.png"> </a>
+          <a href="https://www.instagram.com/frannoesfran/"> <img class=icono src="assets/ln.png"> </a>
+          <a>Francis Pastrana 2021 :) <img class=icono id=yo src="assets/yo.jpg"> </a>
+        </div>
+
+      </div>
   </footer>
 
 
   <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
 
 
 </body>
