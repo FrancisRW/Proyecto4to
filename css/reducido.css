@@ -1016,18 +1016,16 @@ img {
 }
 
 footer {
+  position: relative;
   font-size: 25px;
   color: white;
   background-color: #444;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
 }
 
 .card {
   background-color: rgba(170, 169, 169, 0);
-}
-
-footer {
-  padding-top: 1rem;
-  padding-bottom: 2rem;
 }
 
 .bd-placeholder-img {
@@ -1770,6 +1768,14 @@ button {
   position: relative;
   max-width: 400px !important;
   max-height: 220px !important;
+}
+
+.carousel-inner2 {
+  display: inline-block;
+  position: relative;
+  max-width: auto;
+  max-height: auto;
+  margin-bottom: 20px;
 }
 
 .carousel-item {
